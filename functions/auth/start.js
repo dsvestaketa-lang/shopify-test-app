@@ -7,7 +7,7 @@ export async function onRequestGet({ request, env }) {
   }
 
   // Minimal scopes for testing
-  const scope = "read_products";
+  const scope = "read_metaobject_definitions,write_metaobject_definitions,read_metaobjects,write_metaobjects,read_orders,read_product_feeds,write_product_feeds,read_product_listings,write_product_listings,read_products,write_products,customer_read_metaobjects,unauthenticated_read_metaobjects";
 
   const redirectUri = encodeURIComponent(`${url.origin}/auth/callback`);
   const installUrl =
